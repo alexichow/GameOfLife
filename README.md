@@ -1,12 +1,9 @@
 # GameOfLife
 Conway's Game of Life
 
-## Installation
+## Obtaining FIles
 
 `git clone https://github.com/alexichow/GameOfLife`
-
-In Eclipse:
-`File -> Import -> General -> Existing Project into Workspace -> Locate cloned project -> Finish`
 
 ## Usage
 

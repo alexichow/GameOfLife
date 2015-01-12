@@ -46,14 +46,11 @@ public class GoL implements ActionListener, Runnable{
 	public void createFrame(int x, int y) {
 		frame = new JFrame("Game of Life");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		//frame.setLocationRelativeTo(null);
-		//frame.setSize(1900, 900);
 		
 		mainPanel = new JPanel();
 		mainPanel.setLayout(new BorderLayout());
 		Dimension boardSize = new Dimension(900, 900);
 		layeredPane = new JLayeredPane();
-		//frame.getContentPane().add(layeredPane);
 		frame.getContentPane().add(mainPanel);
 		layeredPane.setPreferredSize(boardSize);
 		mainPanel.add(layeredPane, BorderLayout.CENTER);
@@ -88,12 +85,6 @@ public class GoL implements ActionListener, Runnable{
 		buttonPanel.add(resetButton);
 		buttonPanel.add(Box.createVerticalStrut(10));
 		buttonPanel.add(ssButton);
-		
-		/**
-		JPanel centered = new JPanel();
-		centered.setLayout(new GridLayout());
-		centered.add(buttonPanel);
-		**/
 		
 		//buttonPanel.add(Box.createVerticalGlue());
 		textPanel.add(buttonPanel, BorderLayout.CENTER);
@@ -205,26 +196,6 @@ public class GoL implements ActionListener, Runnable{
 					if(neighbors == 3)
 						board[x][y] = 3; //Mark for life
 				}//if dead
-				
-				
-				/**
-				if(board[x][y] == 1) {
-					if(neighbors < 2) { //If less than two neighbors, mark for death
-						board[x][y] = 0;
-						squares[x][y].setBackground(Color.darkGray);
-					} else if(neighbors < 4) {
-					} else {
-						board[x][y] = 0; //Over 3 neighbors; mark for death
-						squares[x][y].setBackground(Color.darkGray);
-					}
-				}//if currently alive
-				else {
-					if(neighbors == 3) {
-						board[x][y] = 1; //Mark for life
-						squares[x][y].setBackground(Color.magenta);
-					}
-				}//if currently dead
-				**/
 			}
 		}
 		
@@ -419,8 +390,6 @@ public class GoL implements ActionListener, Runnable{
 		gol.createFrame(x, y);
 		gol.showBoard();
 		t = new Thread(gol);
-		//gol.initializeBoard();
-		//gol.mainLoop();
 	}
 
 
