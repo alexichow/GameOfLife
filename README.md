@@ -8,8 +8,8 @@ Conway's Game of Life
 ## Usage
 
 In directory containing Java file:  
-`javac GoL.java`  
-`java GoL`
+1. `javac GoL.java`  
+2. `java GoL`
 
 After program is running, you can click on any cell to mark it for life. Pressing the 'Start' button will begin the generation counter.
 
