@@ -13,5 +13,5 @@ In directory containing Java file:
 
 After program is running, you can click on any cell to mark it for life. Pressing the 'Start' button will begin the generation counter.
 
-Screenshots will be created in the root folder the java file in being run from.
+Screenshots will be created in the root folder the java file is being run from.
 
